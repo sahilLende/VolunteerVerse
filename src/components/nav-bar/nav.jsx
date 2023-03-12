@@ -6,21 +6,25 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useMediaQuery } from "@mui/material";
 
 const Nav = () => {
+  const matches = useMediaQuery("(max-width:600px)");
   return (
     <Box sx={{ width: "100%", flexGrow: 1, position: "static" }}>
       <AppBar position="static" sx={{ padding: 0.5 }}>
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
+          {matches && (
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+            >
+              <MenuIcon />
+            </IconButton>
+          )}
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             VolunteerVerse
           </Typography>
