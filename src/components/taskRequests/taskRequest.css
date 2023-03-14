@@ -1,0 +1,24 @@
+.task-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  max-height: 300px;
+  padding: 1rem;
+  background: grey;
+  align-items: center;
+  border-radius: 5%;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.task-admin-img {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
