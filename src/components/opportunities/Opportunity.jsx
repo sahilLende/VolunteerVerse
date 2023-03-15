@@ -16,14 +16,15 @@ const Opportunity = ({
     <div className="card-container">
       <div className="card-header">
         <VolunteerActivismIcon
-          style={{ color: "red", width: "30px", height: "30px" }}
+          className="card-admin"
+          style={{ color: "white" }}
         />
         <img src={img} alt="admin" className="card-admin" />
       </div>
       <div className="card-content">
         <h1 className="card-title">{projectTitle}</h1>
         <h3 className="card-Org ">{OrgName}</h3>
-        {status ? <h4> status: Open</h4> : <h4>Status: Closed</h4>}
+        <h6>{`status: ${status ? "Open" : " Closed"}`}</h6>
         <p>{desc}</p>
       </div>
     </div>

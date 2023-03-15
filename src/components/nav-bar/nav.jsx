@@ -11,8 +11,8 @@ import { useMediaQuery } from "@mui/material";
 const Nav = () => {
   const matches = useMediaQuery("(max-width:600px)");
   return (
-    <Box sx={{ width: "100%", flexGrow: 1, position: "static" }}>
-      <AppBar position="static" sx={{ padding: 0.5 }}>
+    <Box sx={{ width: "100%", flexGrow: 1, position: "fixed" }}>
+      <AppBar sx={{ padding: 0.5, background: "#30004f" }}>
         <Toolbar>
           {matches && (
             <IconButton

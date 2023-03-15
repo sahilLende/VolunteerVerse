@@ -5,7 +5,10 @@
 
   //color-scheme: light dark;
   color: black;
-  background-color: rgba(234, 224, 213, 0.87);
+  background-color: #30004f;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.09'%3E%3Ccircle fill='%2330004F' cx='50' cy='0' r='50'/%3E%3Cg fill='%233a0456' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%2345095c' cx='50' cy='100' r='50'/%3E%3Cg fill='%234f0d63' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23591169' cx='50' cy='200' r='50'/%3E%3Cg fill='%23641670' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%236e1a76' cx='50' cy='300' r='50'/%3E%3Cg fill='%23781e7d' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23832283' cx='50' cy='400' r='50'/%3E%3Cg fill='%238d278a' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23982b90' cx='50' cy='500' r='50'/%3E%3Cg fill='%23a22f97' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ac349d' cx='50' cy='600' r='50'/%3E%3Cg fill='%23b738a4' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c13caa' cx='50' cy='700' r='50'/%3E%3Cg fill='%23cb41b1' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d645b7' cx='50' cy='800' r='50'/%3E%3Cg fill='%23e049be' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ea4dc4' cx='50' cy='900' r='50'/%3E%3Cg fill='%23f552cb' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23FF56D1' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,11 +19,13 @@
 button {
   background-color: ;
 }
-
+h1 {
+  font-size: 20px;
+}
 a {
   font-weight: 500;
   color: black;
-  text-decoration: inherit;
+  text-decoration: none;
 }
 a:hover {
   color: #535bf2;

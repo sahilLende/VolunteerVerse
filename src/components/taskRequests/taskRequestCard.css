@@ -1,0 +1,47 @@
+.task-card {
+  background: rgba(12, 137, 194, 1);
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  padding: 1rem;
+  margin: 2px;
+  flex-direction: column;
+  flex: 1;
+  font-size: 0.3rem;
+  border-radius: 5.5%;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+
+.task-admin-img {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.task-main {
+  overflow: wrap;
+}
+
+.btn {
+  min-width: 0.3rem;
+  font-size: inherit;
+}
+
+.task-title {
+  font-size: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .task-card {
+    font-size: 1rem;
+  }
+  .task-title {
+    font-size: 1.2rem;
+  }
+}

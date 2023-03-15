@@ -1,12 +1,12 @@
 import React from "react";
-
 import Box from "@mui/material/Box";
-import TaskRequest from "./TaskRequest";
 import { useState, useEffect } from "react";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
-import "./taskRequest.css";
+import "./taskRequestSwiper.css";
 import { useMediaQuery } from "@mui/material";
+import TaskRequestCard from "./TaskRequestCard";
+import AssignmentIcon from "@mui/icons-material/Assignment";
 
 //container
 //-> task details
@@ -103,24 +103,29 @@ const TaskRequestSwpier = () => {
       },
     ];
     setTaskReqData(data);
-    console.log(taskReqData);
   }, []);
 
   return (
     <Box
       sx={{
         minWidth: "250px",
-        m: 2,
+        ml: 5,
+        mr: 5,
+        mb: 1,
+        mt: 12,
       }}
     >
-      <div className="task-container">
+      <h1>
+        Task Requests <AssignmentIcon />
+      </h1>
+      <div className="task-request-container">
         <NavigateBeforeIcon
           onClick={() =>
             currentTaskRequest > 0 && setCurrentTaskRequest((prev) => prev - 1)
           }
         />
         {taskReqData && (
-          <TaskRequest
+          <TaskRequestCard
             key={taskReqData[currentTaskRequest].id}
             projectTitle={taskReqData[currentTaskRequest].projectTitle}
             admin={taskReqData[currentTaskRequest].admin}
