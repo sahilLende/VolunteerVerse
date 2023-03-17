@@ -109,10 +109,8 @@ const TaskRequestSwpier = () => {
     <Box
       sx={{
         minWidth: "250px",
-        ml: 5,
-        mr: 5,
         mb: 1,
-        mt: 12,
+        mt: 1,
       }}
     >
       <h1>

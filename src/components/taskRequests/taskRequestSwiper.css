@@ -5,7 +5,7 @@
   min-height: 150px;
   background: rgba(122, 137, 194, 0.4);
   align-items: center;
-  border-radius: 5%;
+  border-radius: 19px 19px 19px 19px;
   padding: 1.2rem;
 }
 
@@ -13,6 +13,5 @@
   .task-request-container {
     width: 50%;
     margin: 0 auto;
-    border-radius: 2%;
   }
 }

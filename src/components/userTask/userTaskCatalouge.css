@@ -1,0 +1,15 @@
+.userTaskCatalouge {
+  background: white;
+  margin-top: 0.5rem;
+  border-radius: 19px 19px 19px 19px;
+  padding: 1rem;
+  font-size: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .userTaskCatalouge {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+}

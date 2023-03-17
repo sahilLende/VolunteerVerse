@@ -7,7 +7,10 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
 import Typography from "@mui/material/Typography";
+import { useMediaQuery } from "@mui/material";
+
 const SignUpForm = () => {
+  const matches = useMediaQuery("(max-width:600px)");
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -21,11 +24,14 @@ const SignUpForm = () => {
   return (
     <Box
       sx={{
-        padding: 2,
-        marginTop: 8,
+        m: 2,
+        padding: 1,
         display: "flex",
         flexDirection: "column",
+        justifyContent: "space-around",
         alignItems: "center",
+        backgroundColor: "white",
+        borderRadius: "2%",
       }}
     >
       <Avatar sx={{ m: 1, bgcolor: "rgb(247, 127, 0)" }}>
@@ -93,7 +99,7 @@ const SignUpForm = () => {
         <Grid container sx={{}}>
           <Grid item>
             <Link href="#" variant="body2">
-              {"Already registered?"}
+              Already registered?
             </Link>
           </Grid>
         </Grid>
